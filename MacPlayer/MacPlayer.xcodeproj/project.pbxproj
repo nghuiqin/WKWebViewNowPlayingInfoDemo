@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		308837B2F0BE91D5C905B841 /* Pods_MacPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8182337837FD3DDFCB5FC4FA /* Pods_MacPlayer.framework */; };
+		44A0DFA9231D1A0400DB42B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0DFA8231D1A0400DB42B2 /* AppDelegate.swift */; };
+		44A0DFAB231D1A0400DB42B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A0DFAA231D1A0400DB42B2 /* Assets.xcassets */; };
+		44A0DFAE231D1A0400DB42B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A0DFAC231D1A0400DB42B2 /* MainMenu.xib */; };
+		44A0DFB8231D276800DB42B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0DFB6231D276800DB42B2 /* HomeViewController.swift */; };
+		44A0DFB9231D276800DB42B2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A0DFB7231D276800DB42B2 /* HomeViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04D959B5C364989167D464C3 /* Pods-MacPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacPlayer.release.xcconfig"; path = "Target Support Files/Pods-MacPlayer/Pods-MacPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		0BDCFA2651B0508659A820D9 /* Pods-MacPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacPlayer.debug.xcconfig"; path = "Target Support Files/Pods-MacPlayer/Pods-MacPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		44A0DFA5231D1A0400DB42B2 /* MacPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A0DFA8231D1A0400DB42B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44A0DFAA231D1A0400DB42B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44A0DFAD231D1A0400DB42B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		44A0DFAF231D1A0400DB42B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A0DFB0231D1A0400DB42B2 /* MacPlayer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacPlayer.entitlements; sourceTree = "<group>"; };
+		44A0DFB6231D276800DB42B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		44A0DFB7231D276800DB42B2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		8182337837FD3DDFCB5FC4FA /* Pods_MacPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44A0DFA2231D1A0400DB42B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308837B2F0BE91D5C905B841 /* Pods_MacPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44A0DF9C231D1A0400DB42B2 = {
+			isa = PBXGroup;
+			children = (
+				44A0DFA7231D1A0400DB42B2 /* MacPlayer */,
+				44A0DFA6231D1A0400DB42B2 /* Products */,
+				6D4CF6171F6CEBC0613EE266 /* Pods */,
+				DC17DBE62F87855F2EB1BF17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44A0DFA6231D1A0400DB42B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44A0DFA5231D1A0400DB42B2 /* MacPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44A0DFA7231D1A0400DB42B2 /* MacPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				44A0DFA8231D1A0400DB42B2 /* AppDelegate.swift */,
+				44A0DFB6231D276800DB42B2 /* HomeViewController.swift */,
+				44A0DFB7231D276800DB42B2 /* HomeViewController.xib */,
+				44A0DFAA231D1A0400DB42B2 /* Assets.xcassets */,
+				44A0DFAC231D1A0400DB42B2 /* MainMenu.xib */,
+				44A0DFAF231D1A0400DB42B2 /* Info.plist */,
+				44A0DFB0231D1A0400DB42B2 /* MacPlayer.entitlements */,
+			);
+			path = MacPlayer;
+			sourceTree = "<group>";
+		};
+		6D4CF6171F6CEBC0613EE266 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BDCFA2651B0508659A820D9 /* Pods-MacPlayer.debug.xcconfig */,
+				04D959B5C364989167D464C3 /* Pods-MacPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC17DBE62F87855F2EB1BF17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8182337837FD3DDFCB5FC4FA /* Pods_MacPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44A0DFA4231D1A0400DB42B2 /* MacPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A0DFB3231D1A0400DB42B2 /* Build configuration list for PBXNativeTarget "MacPlayer" */;
+			buildPhases = (
+				EEE94377CEB76BC334CF4984 /* [CP] Check Pods Manifest.lock */,
+				44A0DFA1231D1A0400DB42B2 /* Sources */,
+				44A0DFA2231D1A0400DB42B2 /* Frameworks */,
+				44A0DFA3231D1A0400DB42B2 /* Resources */,
+				F9C1DEC382D7CE13C23C9DA4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacPlayer;
+			productName = MacPlayer;
+			productReference = 44A0DFA5231D1A0400DB42B2 /* MacPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44A0DF9D231D1A0400DB42B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Hui Qin Ng";
+				TargetAttributes = {
+					44A0DFA4231D1A0400DB42B2 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 44A0DFA0231D1A0400DB42B2 /* Build configuration list for PBXProject "MacPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44A0DF9C231D1A0400DB42B2;
+			productRefGroup = 44A0DFA6231D1A0400DB42B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44A0DFA4231D1A0400DB42B2 /* MacPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44A0DFA3231D1A0400DB42B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A0DFAB231D1A0400DB42B2 /* Assets.xcassets in Resources */,
+				44A0DFAE231D1A0400DB42B2 /* MainMenu.xib in Resources */,
+				44A0DFB9231D276800DB42B2 /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EEE94377CEB76BC334CF4984 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C1DEC382D7CE13C23C9DA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacPlayer/Pods-MacPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacPlayer/Pods-MacPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacPlayer/Pods-MacPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44A0DFA1231D1A0400DB42B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A0DFA9231D1A0400DB42B2 /* AppDelegate.swift in Sources */,
+				44A0DFB8231D276800DB42B2 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44A0DFAC231D1A0400DB42B2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44A0DFAD231D1A0400DB42B2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44A0DFB1231D1A0400DB42B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44A0DFB2231D1A0400DB42B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		44A0DFB4231D1A0400DB42B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDCFA2651B0508659A820D9 /* Pods-MacPlayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacPlayer/MacPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = BLV2C98A87;
+				INFOPLIST_FILE = MacPlayer/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AppKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"KKAudioEngine\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huiqinlab.practice.MacPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		44A0DFB5231D1A0400DB42B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D959B5C364989167D464C3 /* Pods-MacPlayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacPlayer/MacPlayer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = BLV2C98A87;
+				INFOPLIST_FILE = MacPlayer/Info.plist;
+				INFOPLIST_PREPROCESS = NO;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AppKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"KKAudioEngine\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huiqinlab.practice.MacPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44A0DFA0231D1A0400DB42B2 /* Build configuration list for PBXProject "MacPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A0DFB1231D1A0400DB42B2 /* Debug */,
+				44A0DFB2231D1A0400DB42B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44A0DFB3231D1A0400DB42B2 /* Build configuration list for PBXNativeTarget "MacPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44A0DFB4231D1A0400DB42B2 /* Debug */,
+				44A0DFB5231D1A0400DB42B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44A0DF9D231D1A0400DB42B2 /* Project object */;
+}

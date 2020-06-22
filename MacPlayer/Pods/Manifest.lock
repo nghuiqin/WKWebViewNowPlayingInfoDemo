@@ -1,0 +1,16 @@
+PODS:
+  - KKAudioEngineMac (1.1.1)
+
+DEPENDENCIES:
+  - KKAudioEngineMac
+
+SPEC REPOS:
+  "git@gitlab.kkinternal.com:xddd/kkboxpodspecs.git":
+    - KKAudioEngineMac
+
+SPEC CHECKSUMS:
+  KKAudioEngineMac: 6a8d3de93622d827e15288830338ce4a2c72b545
+
+PODFILE CHECKSUM: ab1073e58320cf062371ee6110479a78c2c702af
+
+COCOAPODS: 1.7.5

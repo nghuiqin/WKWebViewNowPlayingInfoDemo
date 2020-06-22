@@ -1,0 +1,6 @@
+framework module KKAudioEngine {
+  umbrella header "KKAudioEngineMac-umbrella.h"
+
+  export *
+  module * { export * }
+}

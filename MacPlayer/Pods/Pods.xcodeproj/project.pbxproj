@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		004DEDFA94719F2CD96928D16C8B0ABE /* KKAudioStreamTempFileBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F950607234A480494A4CC97F154F935 /* KKAudioStreamTempFileBuffer.m */; };
+		015B6FA68B7335B0A46A14C49CE3DBE8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C36A91C94401A1470251B28895D94AE /* Cocoa.framework */; };
+		05C2424AB7EA5291A09775D6100F5870 /* KKAudioStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B5BEAA22983CB65A3C68E300FECE0C04 /* KKAudioStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06768B6EEA6A797F3E41D795CCBE2CFD /* KKAudioGenericOutputNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 511A1420A5413512F1BFA475033A6767 /* KKAudioGenericOutputNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A93597BF14E901445A73E97BEF22A2 /* KKAudioEngineOperation+Privates.h in Headers */ = {isa = PBXBuildFile; fileRef = 25430294B75C102A05443DDC62888872 /* KKAudioEngineOperation+Privates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1086D76846F49CBAAB513F1E98E7BA43 /* KKAudioEngineHTTPOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 817A4BCD1440326CFF0278E4E240E0AF /* KKAudioEngineHTTPOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24FB7A3C072834934882F6700717D20D /* KKAudioEngineFileOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 77078AC2120C7C66F51A3B3B649068B7 /* KKAudioEngineFileOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AE2E8F7DD52E374B69A4FC4375E2F61 /* KKAudioEQEffectNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 877E2DA4FEB2DDE23CB51C71D98729B8 /* KKAudioEQEffectNode.m */; };
+		2CFE445FDCA7B83702C88EF6B2E96306 /* KKAudioStreamTempFileBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B2CB701EF6DF11B7798D4ACA2C26835 /* KKAudioStreamTempFileBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CFD85E612175C38A064DF116DA8352D /* KKAudioSubGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = A1BC526BE3F278D2E61358BF78FE7805 /* KKAudioSubGraph.m */; };
+		41DFAE8638FFB0ABF6BB51E12BD7C21D /* KKAudioGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = F4DD43347C62FCC8D68D6CBBBA235CD3 /* KKAudioGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4294E13EB772E2EE2681025A916BA0E4 /* KKAudioEngineOperation+Privates.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E303129EA8CBE6C080A154A2B9BE146 /* KKAudioEngineOperation+Privates.m */; };
+		455BB0B011990CB33F85851E058314D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C36A91C94401A1470251B28895D94AE /* Cocoa.framework */; };
+		46F6BFA4DB7533CC2FF7908A160897BE /* KKAudioEngineMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13BD5E71C3F8A700D63D9E24E2FBF17E /* KKAudioEngineMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49A4447D751503C5EDE4DE257EE7866F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAA04563AED3CE2E1AB865139C57F1E /* AppKit.framework */; };
+		49D06C4F4B95DADF41780F135B6E2910 /* Pods-MacPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A61DA623EECB459B81D337CE23B261 /* Pods-MacPlayer-dummy.m */; };
+		49F03D7415A5066897E810999C8FF2E1 /* KKAudioConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9376B2DD25DCEE5F1177ED99BFB5D058 /* KKAudioConverter.m */; };
+		4F5B44E2B340F3D404356FF913B6B378 /* KKAudioStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1122615412179548BA5A4DFB4781 /* KKAudioStreamParser.m */; };
+		51EDBC29F0B68A669A7D944867662036 /* KKAudioGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7029AEB64991540F3353F230F9BD2C /* KKAudioGraph.m */; };
+		5D7F000776D5983A3361C090D6008A23 /* KKAudioFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 792753B184108D0E2B07F22F706ACE81 /* KKAudioFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62834E3CF8BCFAC8C04D8FAA48EBC549 /* KKAudioMixerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDBC2EB3325982FA9BA0138FECF7DF5 /* KKAudioMixerNode.m */; };
+		62BFA78C6957061C6E0334688D7DEB54 /* KKAudioEngineFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8511674EC0FC348337F0390285A773 /* KKAudioEngineFileOperation.m */; };
+		6BD8CCF9B417CCB6CCD68AD9960872AA /* KKAudioFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E841CB342AA16567FBCE6E2B29CD6E /* KKAudioFormat.m */; };
+		770CA95CCB6BD76A2EE65F71BDA50B0D /* Pods-MacPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B6679D81F91433233DDCD42935B4C28 /* Pods-MacPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEAF6E166AD97FF622C15A504975EF8 /* KKAudioEngineFader.h in Headers */ = {isa = PBXBuildFile; fileRef = C2659E094119FFD016F468ACFD9187EC /* KKAudioEngineFader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FCFDFE8525D3883264855A1913AF22C /* KKAudioEngine+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B2FB3F03F934F64CFAF99FFFC0D83C /* KKAudioEngine+Effects.m */; };
+		825E7979FF3DE75989DF8F9DF8549B1F /* KKAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 930210FA8BAC02FA06DC9EC351492C4B /* KKAudioEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8522071D20CB06084B28A79687EA657F /* KKAudioEQEffectNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 69BF057312715D73B52A04D46C5296E1 /* KKAudioEQEffectNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85DC869DFD2989A6D07CD365701B643D /* KKAudioMixerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BC33E89383D4E71575B2A7679BA450A /* KKAudioMixerNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		920C751B4908395BF5305909795DE7DB /* KKAudioEngineOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6454F82323CC050344DAE18D724DB4B6 /* KKAudioEngineOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		937A8141E47E21542BCC204ABD10ADE7 /* KKAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE48775874346E2B0CCC95B4BC8F550 /* KKAudioEngine.m */; };
+		941CFBF68354049E9680699810020F37 /* KKAudioOutputNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC057791D0B4D86F894AAEF0416696E /* KKAudioOutputNode.m */; };
+		998B6DD3D830B1CEC973E68FA0D2B4D4 /* KKAudioGenericOutputNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2742C59CB75CF0C3A2280427ADCA021C /* KKAudioGenericOutputNode.m */; };
+		9B04A3D81B31BFD92CF7921F57B3F171 /* KKAudioNode+View.h in Headers */ = {isa = PBXBuildFile; fileRef = B176DD8CA3D04D15779EC071F3CA5DBC /* KKAudioNode+View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F67395523A0D8ACBAE2F87057E57008 /* KKAudioEngineOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB9981985B47414F769708B5C31955F /* KKAudioEngineOperation.m */; };
+		A3BCB1FB7DFD2928A27237996F6933B6 /* KKAudioNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 557A71B52083318ACA46659ED735F4C4 /* KKAudioNode.m */; };
+		B57B35E7F51C0D3733B2E4A42E359322 /* KKAudioNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E1CA14AB68499FEFF848A4A83E18BBC /* KKAudioNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD86A7DE28E5F21708F4F49894ABE7D7 /* KKAudioEngineMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1603EDFCA64B730CD59EFB83A3CEC /* KKAudioEngineMac-dummy.m */; };
+		C237F800AF7D46E149E1E1157AAEBFA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB2C13362567401EDDBA81793ABDEF0 /* Foundation.framework */; };
+		C398F8FC08778F701C6E3DA71C83F31B /* KKAudioEngineHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F73FF5B9121242815F2A8BA9C9C1390 /* KKAudioEngineHTTPOperation.m */; };
+		C6015B14AA8BAACDF3603E37CD9487CF /* KKAudioStreamBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A644FDAC995F472609325F403313ABEE /* KKAudioStreamBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D45BCC2903F1E2DF242E94382C03AAE9 /* KKAudioStreamBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C17A5F05741AA702B4BE56717DAE11 /* KKAudioStreamBuffer.m */; };
+		E1954F1EB8D09DF29318A57E72F62147 /* KKAudioEngine+Effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 24463C4DCD3F7A3AE8BEBC7E2D42C49C /* KKAudioEngine+Effects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2BCEE9515BA88BD18EA3EAA97FB3EFF /* KKAudioSubGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 852D5BAEDAFC06441E03489C75439E8B /* KKAudioSubGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E44F77BAA62A9E3E739BCBB078F250CE /* KKAudioNode+View.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CB55E65886BF0084C30482151D685F /* KKAudioNode+View.m */; };
+		E4B7D846A53B0266746103FDCE4D1FCB /* KKAudioConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9EC2BC702461774907982F52571968 /* KKAudioConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEDF8FAA618637E572978408921C5996 /* KKAudioEngineFader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF88086A842DCBE80F37CBEBFF33D9 /* KKAudioEngineFader.m */; };
+		F4E60321F6CE732A94BBDECEDE50A40D /* KKAudioOutputNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0030203CDB6ED4E2F5CDFCA98B555B2B /* KKAudioOutputNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E04FA9CD297EC884EB6E7EE60E32656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42AB051B9FC52E625559BC6987D644F9;
+			remoteInfo = KKAudioEngineMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0030203CDB6ED4E2F5CDFCA98B555B2B /* KKAudioOutputNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioOutputNode.h; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioOutputNode.h; sourceTree = "<group>"; };
+		03B2FB3F03F934F64CFAF99FFFC0D83C /* KKAudioEngine+Effects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KKAudioEngine+Effects.m"; path = "KKAudioEngineMac/KKAudioEngine+Effects.m"; sourceTree = "<group>"; };
+		09CB55E65886BF0084C30482151D685F /* KKAudioNode+View.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KKAudioNode+View.m"; path = "KKAudioEngineMac/AudioGraph/Nodes/KKAudioNode+View.m"; sourceTree = "<group>"; };
+		12C17A5F05741AA702B4BE56717DAE11 /* KKAudioStreamBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioStreamBuffer.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioStreamBuffer.m; sourceTree = "<group>"; };
+		13BD5E71C3F8A700D63D9E24E2FBF17E /* KKAudioEngineMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAudioEngineMac-umbrella.h"; sourceTree = "<group>"; };
+		1BC33E89383D4E71575B2A7679BA450A /* KKAudioMixerNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioMixerNode.h; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioMixerNode.h; sourceTree = "<group>"; };
+		1DAA3519A90E3C99DE41944D040F93CF /* Pods-MacPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		20E841CB342AA16567FBCE6E2B29CD6E /* KKAudioFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioFormat.m; path = KKAudioEngineMac/KKAudioFormat.m; sourceTree = "<group>"; };
+		21839F16864DB224F32C2A103B1E2BD3 /* Pods-MacPlayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MacPlayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21A61DA623EECB459B81D337CE23B261 /* Pods-MacPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MacPlayer-dummy.m"; sourceTree = "<group>"; };
+		232058AF4C80CCD0D1D374FB54615473 /* KKAudioEngineMac-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KKAudioEngineMac-Info.plist"; sourceTree = "<group>"; };
+		240DEC42E1E72EAB1BC9A0561D85839C /* Pods-MacPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MacPlayer-Info.plist"; sourceTree = "<group>"; };
+		24463C4DCD3F7A3AE8BEBC7E2D42C49C /* KKAudioEngine+Effects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KKAudioEngine+Effects.h"; path = "KKAudioEngineMac/KKAudioEngine+Effects.h"; sourceTree = "<group>"; };
+		25430294B75C102A05443DDC62888872 /* KKAudioEngineOperation+Privates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KKAudioEngineOperation+Privates.h"; path = "KKAudioEngineMac/AudioEngineOperation/KKAudioEngineOperation+Privates.h"; sourceTree = "<group>"; };
+		2742C59CB75CF0C3A2280427ADCA021C /* KKAudioGenericOutputNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioGenericOutputNode.m; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioGenericOutputNode.m; sourceTree = "<group>"; };
+		2BD1603EDFCA64B730CD59EFB83A3CEC /* KKAudioEngineMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKAudioEngineMac-dummy.m"; sourceTree = "<group>"; };
+		2C36A91C94401A1470251B28895D94AE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2D9EC2BC702461774907982F52571968 /* KKAudioConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioConverter.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioConverter.h; sourceTree = "<group>"; };
+		2F950607234A480494A4CC97F154F935 /* KKAudioStreamTempFileBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioStreamTempFileBuffer.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioStreamTempFileBuffer.m; sourceTree = "<group>"; };
+		3A7029AEB64991540F3353F230F9BD2C /* KKAudioGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioGraph.m; path = KKAudioEngineMac/AudioGraph/KKAudioGraph.m; sourceTree = "<group>"; };
+		3CEF88086A842DCBE80F37CBEBFF33D9 /* KKAudioEngineFader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioEngineFader.m; path = KKAudioEngineMac/KKAudioEngineFader.m; sourceTree = "<group>"; };
+		3EFE6D79C8FA86E6AC4F39A6426AD18C /* Pods-MacPlayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MacPlayer-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E1CA14AB68499FEFF848A4A83E18BBC /* KKAudioNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioNode.h; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioNode.h; sourceTree = "<group>"; };
+		4F73FF5B9121242815F2A8BA9C9C1390 /* KKAudioEngineHTTPOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioEngineHTTPOperation.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioEngineHTTPOperation.m; sourceTree = "<group>"; };
+		511A1420A5413512F1BFA475033A6767 /* KKAudioGenericOutputNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioGenericOutputNode.h; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioGenericOutputNode.h; sourceTree = "<group>"; };
+		557A71B52083318ACA46659ED735F4C4 /* KKAudioNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioNode.m; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioNode.m; sourceTree = "<group>"; };
+		57AD1CC19B466B24558C5A331C785EAB /* Pods-MacPlayer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MacPlayer-frameworks.sh"; sourceTree = "<group>"; };
+		5B2CB701EF6DF11B7798D4ACA2C26835 /* KKAudioStreamTempFileBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioStreamTempFileBuffer.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioStreamTempFileBuffer.h; sourceTree = "<group>"; };
+		6454F82323CC050344DAE18D724DB4B6 /* KKAudioEngineOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioEngineOperation.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioEngineOperation.h; sourceTree = "<group>"; };
+		69BF057312715D73B52A04D46C5296E1 /* KKAudioEQEffectNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioEQEffectNode.h; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioEQEffectNode.h; sourceTree = "<group>"; };
+		6E11669C797D44FC235A35AF31585611 /* Pods-MacPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MacPlayer.modulemap"; sourceTree = "<group>"; };
+		77078AC2120C7C66F51A3B3B649068B7 /* KKAudioEngineFileOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioEngineFileOperation.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioEngineFileOperation.h; sourceTree = "<group>"; };
+		792753B184108D0E2B07F22F706ACE81 /* KKAudioFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioFormat.h; path = KKAudioEngineMac/KKAudioFormat.h; sourceTree = "<group>"; };
+		7B6679D81F91433233DDCD42935B4C28 /* Pods-MacPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MacPlayer-umbrella.h"; sourceTree = "<group>"; };
+		7C8511674EC0FC348337F0390285A773 /* KKAudioEngineFileOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioEngineFileOperation.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioEngineFileOperation.m; sourceTree = "<group>"; };
+		7E303129EA8CBE6C080A154A2B9BE146 /* KKAudioEngineOperation+Privates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "KKAudioEngineOperation+Privates.m"; path = "KKAudioEngineMac/AudioEngineOperation/KKAudioEngineOperation+Privates.m"; sourceTree = "<group>"; };
+		817A4BCD1440326CFF0278E4E240E0AF /* KKAudioEngineHTTPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioEngineHTTPOperation.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioEngineHTTPOperation.h; sourceTree = "<group>"; };
+		852D5BAEDAFC06441E03489C75439E8B /* KKAudioSubGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioSubGraph.h; path = KKAudioEngineMac/AudioGraph/KKAudioSubGraph.h; sourceTree = "<group>"; };
+		877E2DA4FEB2DDE23CB51C71D98729B8 /* KKAudioEQEffectNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioEQEffectNode.m; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioEQEffectNode.m; sourceTree = "<group>"; };
+		8AAA04563AED3CE2E1AB865139C57F1E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		8CA5E8B4DFBB108B913F66ECD0248605 /* Pods_MacPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MacPlayer.framework; path = "Pods-MacPlayer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		930210FA8BAC02FA06DC9EC351492C4B /* KKAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioEngine.h; path = KKAudioEngineMac/KKAudioEngine.h; sourceTree = "<group>"; };
+		9376B2DD25DCEE5F1177ED99BFB5D058 /* KKAudioConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioConverter.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioConverter.m; sourceTree = "<group>"; };
+		9BB9981985B47414F769708B5C31955F /* KKAudioEngineOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioEngineOperation.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioEngineOperation.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A05FE47735EC28A52607CF49EFE7AAF1 /* Pods-MacPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MacPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		A1BC526BE3F278D2E61358BF78FE7805 /* KKAudioSubGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioSubGraph.m; path = KKAudioEngineMac/AudioGraph/KKAudioSubGraph.m; sourceTree = "<group>"; };
+		A2010423794F02AB34587D54064D0AB2 /* KKAudioEngineMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKAudioEngineMac-prefix.pch"; sourceTree = "<group>"; };
+		A644FDAC995F472609325F403313ABEE /* KKAudioStreamBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioStreamBuffer.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioStreamBuffer.h; sourceTree = "<group>"; };
+		ABD6B317894F43E91A8A3C7679EC2326 /* KKAudioEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KKAudioEngine.framework; path = KKAudioEngineMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B176DD8CA3D04D15779EC071F3CA5DBC /* KKAudioNode+View.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KKAudioNode+View.h"; path = "KKAudioEngineMac/AudioGraph/Nodes/KKAudioNode+View.h"; sourceTree = "<group>"; };
+		B5BEAA22983CB65A3C68E300FECE0C04 /* KKAudioStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioStreamParser.h; path = KKAudioEngineMac/AudioEngineOperation/KKAudioStreamParser.h; sourceTree = "<group>"; };
+		C2659E094119FFD016F468ACFD9187EC /* KKAudioEngineFader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioEngineFader.h; path = KKAudioEngineMac/KKAudioEngineFader.h; sourceTree = "<group>"; };
+		C726C1E2BAB65334E20A3037AE43E394 /* KKAudioEngineMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKAudioEngineMac.modulemap; sourceTree = "<group>"; };
+		CDB2C13362567401EDDBA81793ABDEF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D212D5CA3FE77920EC7E2487C681C087 /* KKAudioEngineMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKAudioEngineMac.xcconfig; sourceTree = "<group>"; };
+		DDDBC2EB3325982FA9BA0138FECF7DF5 /* KKAudioMixerNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioMixerNode.m; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioMixerNode.m; sourceTree = "<group>"; };
+		EAC057791D0B4D86F894AAEF0416696E /* KKAudioOutputNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioOutputNode.m; path = KKAudioEngineMac/AudioGraph/Nodes/KKAudioOutputNode.m; sourceTree = "<group>"; };
+		F4DD43347C62FCC8D68D6CBBBA235CD3 /* KKAudioGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKAudioGraph.h; path = KKAudioEngineMac/AudioGraph/KKAudioGraph.h; sourceTree = "<group>"; };
+		F86F1122615412179548BA5A4DFB4781 /* KKAudioStreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioStreamParser.m; path = KKAudioEngineMac/AudioEngineOperation/KKAudioStreamParser.m; sourceTree = "<group>"; };
+		FEE48775874346E2B0CCC95B4BC8F550 /* KKAudioEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKAudioEngine.m; path = KKAudioEngineMac/KKAudioEngine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5236362AFBCDB5C873DAE1C34B194360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A4447D751503C5EDE4DE257EE7866F /* AppKit.framework in Frameworks */,
+				015B6FA68B7335B0A46A14C49CE3DBE8 /* Cocoa.framework in Frameworks */,
+				C237F800AF7D46E149E1E1157AAEBFA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3FF19B3F115B5E3FC03DFA2F2D706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				455BB0B011990CB33F85851E058314D2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1753E6085ED4EFB0338D90284B968AAA /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				8AAA04563AED3CE2E1AB865139C57F1E /* AppKit.framework */,
+				2C36A91C94401A1470251B28895D94AE /* Cocoa.framework */,
+				CDB2C13362567401EDDBA81793ABDEF0 /* Foundation.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		24B08C2BA0717F0BD154F15EA7530D66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD6B317894F43E91A8A3C7679EC2326 /* KKAudioEngine.framework */,
+				8CA5E8B4DFBB108B913F66ECD0248605 /* Pods_MacPlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E27CCF757DCD37C1C06F6740B304FD7 /* Pods-MacPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6E11669C797D44FC235A35AF31585611 /* Pods-MacPlayer.modulemap */,
+				21839F16864DB224F32C2A103B1E2BD3 /* Pods-MacPlayer-acknowledgements.markdown */,
+				3EFE6D79C8FA86E6AC4F39A6426AD18C /* Pods-MacPlayer-acknowledgements.plist */,
+				21A61DA623EECB459B81D337CE23B261 /* Pods-MacPlayer-dummy.m */,
+				57AD1CC19B466B24558C5A331C785EAB /* Pods-MacPlayer-frameworks.sh */,
+				240DEC42E1E72EAB1BC9A0561D85839C /* Pods-MacPlayer-Info.plist */,
+				7B6679D81F91433233DDCD42935B4C28 /* Pods-MacPlayer-umbrella.h */,
+				1DAA3519A90E3C99DE41944D040F93CF /* Pods-MacPlayer.debug.xcconfig */,
+				A05FE47735EC28A52607CF49EFE7AAF1 /* Pods-MacPlayer.release.xcconfig */,
+			);
+			name = "Pods-MacPlayer";
+			path = "Target Support Files/Pods-MacPlayer";
+			sourceTree = "<group>";
+		};
+		421D3E213245B475850411EAA60448B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C726C1E2BAB65334E20A3037AE43E394 /* KKAudioEngineMac.modulemap */,
+				D212D5CA3FE77920EC7E2487C681C087 /* KKAudioEngineMac.xcconfig */,
+				2BD1603EDFCA64B730CD59EFB83A3CEC /* KKAudioEngineMac-dummy.m */,
+				232058AF4C80CCD0D1D374FB54615473 /* KKAudioEngineMac-Info.plist */,
+				A2010423794F02AB34587D54064D0AB2 /* KKAudioEngineMac-prefix.pch */,
+				13BD5E71C3F8A700D63D9E24E2FBF17E /* KKAudioEngineMac-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KKAudioEngineMac";
+			sourceTree = "<group>";
+		};
+		7B6437B4B9BF600204AD577A93AC547A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E27CCF757DCD37C1C06F6740B304FD7 /* Pods-MacPlayer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8887360CB806AF518DD2D60348472F11 /* KKAudioEngineMac */ = {
+			isa = PBXGroup;
+			children = (
+				2D9EC2BC702461774907982F52571968 /* KKAudioConverter.h */,
+				9376B2DD25DCEE5F1177ED99BFB5D058 /* KKAudioConverter.m */,
+				930210FA8BAC02FA06DC9EC351492C4B /* KKAudioEngine.h */,
+				FEE48775874346E2B0CCC95B4BC8F550 /* KKAudioEngine.m */,
+				24463C4DCD3F7A3AE8BEBC7E2D42C49C /* KKAudioEngine+Effects.h */,
+				03B2FB3F03F934F64CFAF99FFFC0D83C /* KKAudioEngine+Effects.m */,
+				C2659E094119FFD016F468ACFD9187EC /* KKAudioEngineFader.h */,
+				3CEF88086A842DCBE80F37CBEBFF33D9 /* KKAudioEngineFader.m */,
+				77078AC2120C7C66F51A3B3B649068B7 /* KKAudioEngineFileOperation.h */,
+				7C8511674EC0FC348337F0390285A773 /* KKAudioEngineFileOperation.m */,
+				817A4BCD1440326CFF0278E4E240E0AF /* KKAudioEngineHTTPOperation.h */,
+				4F73FF5B9121242815F2A8BA9C9C1390 /* KKAudioEngineHTTPOperation.m */,
+				6454F82323CC050344DAE18D724DB4B6 /* KKAudioEngineOperation.h */,
+				9BB9981985B47414F769708B5C31955F /* KKAudioEngineOperation.m */,
+				25430294B75C102A05443DDC62888872 /* KKAudioEngineOperation+Privates.h */,
+				7E303129EA8CBE6C080A154A2B9BE146 /* KKAudioEngineOperation+Privates.m */,
+				69BF057312715D73B52A04D46C5296E1 /* KKAudioEQEffectNode.h */,
+				877E2DA4FEB2DDE23CB51C71D98729B8 /* KKAudioEQEffectNode.m */,
+				792753B184108D0E2B07F22F706ACE81 /* KKAudioFormat.h */,
+				20E841CB342AA16567FBCE6E2B29CD6E /* KKAudioFormat.m */,
+				511A1420A5413512F1BFA475033A6767 /* KKAudioGenericOutputNode.h */,
+				2742C59CB75CF0C3A2280427ADCA021C /* KKAudioGenericOutputNode.m */,
+				F4DD43347C62FCC8D68D6CBBBA235CD3 /* KKAudioGraph.h */,
+				3A7029AEB64991540F3353F230F9BD2C /* KKAudioGraph.m */,
+				1BC33E89383D4E71575B2A7679BA450A /* KKAudioMixerNode.h */,
+				DDDBC2EB3325982FA9BA0138FECF7DF5 /* KKAudioMixerNode.m */,
+				4E1CA14AB68499FEFF848A4A83E18BBC /* KKAudioNode.h */,
+				557A71B52083318ACA46659ED735F4C4 /* KKAudioNode.m */,
+				B176DD8CA3D04D15779EC071F3CA5DBC /* KKAudioNode+View.h */,
+				09CB55E65886BF0084C30482151D685F /* KKAudioNode+View.m */,
+				0030203CDB6ED4E2F5CDFCA98B555B2B /* KKAudioOutputNode.h */,
+				EAC057791D0B4D86F894AAEF0416696E /* KKAudioOutputNode.m */,
+				A644FDAC995F472609325F403313ABEE /* KKAudioStreamBuffer.h */,
+				12C17A5F05741AA702B4BE56717DAE11 /* KKAudioStreamBuffer.m */,
+				B5BEAA22983CB65A3C68E300FECE0C04 /* KKAudioStreamParser.h */,
+				F86F1122615412179548BA5A4DFB4781 /* KKAudioStreamParser.m */,
+				5B2CB701EF6DF11B7798D4ACA2C26835 /* KKAudioStreamTempFileBuffer.h */,
+				2F950607234A480494A4CC97F154F935 /* KKAudioStreamTempFileBuffer.m */,
+				852D5BAEDAFC06441E03489C75439E8B /* KKAudioSubGraph.h */,
+				A1BC526BE3F278D2E61358BF78FE7805 /* KKAudioSubGraph.m */,
+				421D3E213245B475850411EAA60448B0 /* Support Files */,
+			);
+			name = KKAudioEngineMac;
+			path = KKAudioEngineMac;
+			sourceTree = "<group>";
+		};
+		97FA643648F9D5ACFCBD186399782592 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8887360CB806AF518DD2D60348472F11 /* KKAudioEngineMac */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1753E6085ED4EFB0338D90284B968AAA /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */,
+				97FA643648F9D5ACFCBD186399782592 /* Pods */,
+				24B08C2BA0717F0BD154F15EA7530D66 /* Products */,
+				7B6437B4B9BF600204AD577A93AC547A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		383ADE8A3CCAE19838C9E99DE278C026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				770CA95CCB6BD76A2EE65F71BDA50B0D /* Pods-MacPlayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA24BE53928494C132CA695D13F08E3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B7D846A53B0266746103FDCE4D1FCB /* KKAudioConverter.h in Headers */,
+				E1954F1EB8D09DF29318A57E72F62147 /* KKAudioEngine+Effects.h in Headers */,
+				825E7979FF3DE75989DF8F9DF8549B1F /* KKAudioEngine.h in Headers */,
+				7BEAF6E166AD97FF622C15A504975EF8 /* KKAudioEngineFader.h in Headers */,
+				24FB7A3C072834934882F6700717D20D /* KKAudioEngineFileOperation.h in Headers */,
+				1086D76846F49CBAAB513F1E98E7BA43 /* KKAudioEngineHTTPOperation.h in Headers */,
+				46F6BFA4DB7533CC2FF7908A160897BE /* KKAudioEngineMac-umbrella.h in Headers */,
+				07A93597BF14E901445A73E97BEF22A2 /* KKAudioEngineOperation+Privates.h in Headers */,
+				920C751B4908395BF5305909795DE7DB /* KKAudioEngineOperation.h in Headers */,
+				8522071D20CB06084B28A79687EA657F /* KKAudioEQEffectNode.h in Headers */,
+				5D7F000776D5983A3361C090D6008A23 /* KKAudioFormat.h in Headers */,
+				06768B6EEA6A797F3E41D795CCBE2CFD /* KKAudioGenericOutputNode.h in Headers */,
+				41DFAE8638FFB0ABF6BB51E12BD7C21D /* KKAudioGraph.h in Headers */,
+				85DC869DFD2989A6D07CD365701B643D /* KKAudioMixerNode.h in Headers */,
+				9B04A3D81B31BFD92CF7921F57B3F171 /* KKAudioNode+View.h in Headers */,
+				B57B35E7F51C0D3733B2E4A42E359322 /* KKAudioNode.h in Headers */,
+				F4E60321F6CE732A94BBDECEDE50A40D /* KKAudioOutputNode.h in Headers */,
+				C6015B14AA8BAACDF3603E37CD9487CF /* KKAudioStreamBuffer.h in Headers */,
+				05C2424AB7EA5291A09775D6100F5870 /* KKAudioStreamParser.h in Headers */,
+				2CFE445FDCA7B83702C88EF6B2E96306 /* KKAudioStreamTempFileBuffer.h in Headers */,
+				E2BCEE9515BA88BD18EA3EAA97FB3EFF /* KKAudioSubGraph.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42AB051B9FC52E625559BC6987D644F9 /* KKAudioEngineMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A91CC219495EE4A954C96104683C47 /* Build configuration list for PBXNativeTarget "KKAudioEngineMac" */;
+			buildPhases = (
+				EA24BE53928494C132CA695D13F08E3C /* Headers */,
+				45458EF46D37B4689E76E691983D5717 /* Sources */,
+				5236362AFBCDB5C873DAE1C34B194360 /* Frameworks */,
+				1188BCB21A59E6ECEC78DC94AD28D084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKAudioEngineMac;
+			productName = KKAudioEngineMac;
+			productReference = ABD6B317894F43E91A8A3C7679EC2326 /* KKAudioEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89EF6A8FBCB140BFB3CDF8269B6E9B5B /* Pods-MacPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 979336B03B0CC0067969755A8A1DF40A /* Build configuration list for PBXNativeTarget "Pods-MacPlayer" */;
+			buildPhases = (
+				383ADE8A3CCAE19838C9E99DE278C026 /* Headers */,
+				43EC7B0E3CFB6D060CCC90978F4D9678 /* Sources */,
+				F2D3FF19B3F115B5E3FC03DFA2F2D706 /* Frameworks */,
+				AFF705D5691C64BEE8AD89B2F8D1EC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1480A94C790D38AA8A35CD0983408355 /* PBXTargetDependency */,
+			);
+			name = "Pods-MacPlayer";
+			productName = "Pods-MacPlayer";
+			productReference = 8CA5E8B4DFBB108B913F66ECD0248605 /* Pods_MacPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 24B08C2BA0717F0BD154F15EA7530D66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AB051B9FC52E625559BC6987D644F9 /* KKAudioEngineMac */,
+				89EF6A8FBCB140BFB3CDF8269B6E9B5B /* Pods-MacPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1188BCB21A59E6ECEC78DC94AD28D084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFF705D5691C64BEE8AD89B2F8D1EC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43EC7B0E3CFB6D060CCC90978F4D9678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D06C4F4B95DADF41780F135B6E2910 /* Pods-MacPlayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45458EF46D37B4689E76E691983D5717 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F03D7415A5066897E810999C8FF2E1 /* KKAudioConverter.m in Sources */,
+				7FCFDFE8525D3883264855A1913AF22C /* KKAudioEngine+Effects.m in Sources */,
+				937A8141E47E21542BCC204ABD10ADE7 /* KKAudioEngine.m in Sources */,
+				EEDF8FAA618637E572978408921C5996 /* KKAudioEngineFader.m in Sources */,
+				62BFA78C6957061C6E0334688D7DEB54 /* KKAudioEngineFileOperation.m in Sources */,
+				C398F8FC08778F701C6E3DA71C83F31B /* KKAudioEngineHTTPOperation.m in Sources */,
+				BD86A7DE28E5F21708F4F49894ABE7D7 /* KKAudioEngineMac-dummy.m in Sources */,
+				4294E13EB772E2EE2681025A916BA0E4 /* KKAudioEngineOperation+Privates.m in Sources */,
+				9F67395523A0D8ACBAE2F87057E57008 /* KKAudioEngineOperation.m in Sources */,
+				2AE2E8F7DD52E374B69A4FC4375E2F61 /* KKAudioEQEffectNode.m in Sources */,
+				6BD8CCF9B417CCB6CCD68AD9960872AA /* KKAudioFormat.m in Sources */,
+				998B6DD3D830B1CEC973E68FA0D2B4D4 /* KKAudioGenericOutputNode.m in Sources */,
+				51EDBC29F0B68A669A7D944867662036 /* KKAudioGraph.m in Sources */,
+				62834E3CF8BCFAC8C04D8FAA48EBC549 /* KKAudioMixerNode.m in Sources */,
+				E44F77BAA62A9E3E739BCBB078F250CE /* KKAudioNode+View.m in Sources */,
+				A3BCB1FB7DFD2928A27237996F6933B6 /* KKAudioNode.m in Sources */,
+				941CFBF68354049E9680699810020F37 /* KKAudioOutputNode.m in Sources */,
+				D45BCC2903F1E2DF242E94382C03AAE9 /* KKAudioStreamBuffer.m in Sources */,
+				4F5B44E2B340F3D404356FF913B6B378 /* KKAudioStreamParser.m in Sources */,
+				004DEDFA94719F2CD96928D16C8B0ABE /* KKAudioStreamTempFileBuffer.m in Sources */,
+				3CFD85E612175C38A064DF116DA8352D /* KKAudioSubGraph.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1480A94C790D38AA8A35CD0983408355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKAudioEngineMac;
+			target = 42AB051B9FC52E625559BC6987D644F9 /* KKAudioEngineMac */;
+			targetProxy = 0E04FA9CD297EC884EB6E7EE60E32656 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F8A25E05D3C22907266001382FCB99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D212D5CA3FE77920EC7E2487C681C087 /* KKAudioEngineMac.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/KKAudioEngineMac/KKAudioEngineMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKAudioEngineMac/KKAudioEngineMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/KKAudioEngineMac/KKAudioEngineMac.modulemap";
+				PRODUCT_MODULE_NAME = KKAudioEngine;
+				PRODUCT_NAME = KKAudioEngine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		430C0A1F2A9CB52955BEC7CE69B7B629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		56E2756F866C427C2928A443E5816FA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D212D5CA3FE77920EC7E2487C681C087 /* KKAudioEngineMac.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/KKAudioEngineMac/KKAudioEngineMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKAudioEngineMac/KKAudioEngineMac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/KKAudioEngineMac/KKAudioEngineMac.modulemap";
+				PRODUCT_MODULE_NAME = KKAudioEngine;
+				PRODUCT_NAME = KKAudioEngine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		597E092427DF423992C59C814880FE96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9B7140AD5200708E7D93926619BC1CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05FE47735EC28A52607CF49EFE7AAF1 /* Pods-MacPlayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MacPlayer/Pods-MacPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-MacPlayer/Pods-MacPlayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B8FA7387788AA1F28698967270A3A8D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DAA3519A90E3C99DE41944D040F93CF /* Pods-MacPlayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MacPlayer/Pods-MacPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-MacPlayer/Pods-MacPlayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430C0A1F2A9CB52955BEC7CE69B7B629 /* Debug */,
+				597E092427DF423992C59C814880FE96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		979336B03B0CC0067969755A8A1DF40A /* Build configuration list for PBXNativeTarget "Pods-MacPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FA7387788AA1F28698967270A3A8D2 /* Debug */,
+				9B7140AD5200708E7D93926619BC1CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A91CC219495EE4A954C96104683C47 /* Build configuration list for PBXNativeTarget "KKAudioEngineMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56E2756F866C427C2928A443E5816FA9 /* Debug */,
+				1F8A25E05D3C22907266001382FCB99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
