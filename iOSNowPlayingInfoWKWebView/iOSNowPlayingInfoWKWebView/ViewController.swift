@@ -49,6 +49,13 @@ final class ViewController: UIViewController {
 			]
 		}
 
+		/// Workaround  solution from Apple Developer
+		/// Remove all registered commands before register again.
+		func removeMPRemoteCommand() {
+			MPRemoteCommandCenter.shared().playCommand.removeTarget(nil)
+			MPRemoteCommandCenter.shared().pauseCommand.removeTarget(nil)
+		}
+
 		func registerMPRemoteCommand() {
 			MPRemoteCommandCenter.shared().playCommand.addTarget { [player] _ -> MPRemoteCommandHandlerStatus in
 				player.play()
@@ -63,6 +70,7 @@ final class ViewController: UIViewController {
 
 		try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
 		try? AVAudioSession.sharedInstance().setActive(true)
+		removeMPRemoteCommand()
 		registerMPRemoteCommand()
 		registerMPNowPlayingInfo()
 		player.play()
